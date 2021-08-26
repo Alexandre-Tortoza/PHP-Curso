@@ -1,33 +1,25 @@
 <?php
+$contaCorrente = [
+    
+    13209148961 => [
+            'titular' => 'Alex',
+            'Saldo' => 1800
 
-   
-   $conta1 = [ 
-        'titular' => 'Alex',
-        'saldo ' => 1800
-   ];
-     
+    ],
+    
+    14208147951 => [
+        'titular' => 'Maria',
+        'Saldo' =>2000
+    ],
 
-   $conta2 = [
-       'titular' => 'Eduardo',
-       'saldo' => 2000
-
-   ];
-
-   $conta3 = [
-       'titular' => 'Maria',
+   123464838754 => [
+       'titular' => 'EEduardo',
        'saldo' => 5000
-   ];
+   ]
 
+];
 
-   $contaCorrente = [$conta1, $conta2, $conta3];
+foreach ($contaCorrente as $cpf => $conta){
+    echo $cpf . PHP_EOL;
 
-/*
-for($i = 0; $i < count($contaCorrente);$i++){
-    echo $contaCorrente[$i] ['titular']. PHP_EOL;
-}
-*/
-
-foreach ($contaCorrente as $conta){
-    echo $conta ['titular']. PHP_EOL;
-}
-
+};
